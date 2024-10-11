@@ -1,0 +1,38 @@
+
+.container {
+    padding: 20px;
+}
+
+.itemsList {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+.itemsList li {
+    margin-bottom: 10px; 
+}
+.sortButton {
+    margin-right: 10px;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sortButton:hover {
+    background-color: #0056b3;
+}
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin-right: 10px;
+}
+
+.pagination span {
+    margin-right: 10px;
+}

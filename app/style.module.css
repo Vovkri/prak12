@@ -1,0 +1,71 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  flex: 1; /* Allows buttons to grow and shrink */
+  min-width: 80px; /* Sets a minimum width for buttons */
+  max-width: 80px;
+}
+.pagination button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.pagination button[disabled] {
+  background-color: #ccc;
+}
+
+.active {
+  background-color: #0056b3; 
+}
+
+@media (max-width: 600px) {
+  .pagination button {
+    padding: 8px; 
+    font-size: 14px;
+    min-width: auto; 
+  }
+}
+
+.filterContainer {
+  
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filterSelect {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  max-width: 200px;
+}
+
+@media (max-width: 600px) {
+  .filterSelect {
+    padding: 8px;
+    font-size: 14px;
+    min-width: auto;
+    flex-basis: calc(50% - 10px);
+  }
+}
+.buttonmore{  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  max-width: 200px;
+background-color: black;
+}

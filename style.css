@@ -1,0 +1,56 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  .pagination button[disabled] {
+    background-color: #ccc;
+  }
+  
+  .active {
+    background-color: #0056b3; /* Highlight active page */
+  }
+
+
+  
+.select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Отступ между селектами */
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+select:hover {
+  border-color: #007bff; /* Цвет при наведении */
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff; /* Цвет при фокусе */
+}
+
+.panel-anime {
+  margin-top: 20px; /* Отступ сверху для панели */
+}
